@@ -1,16 +1,30 @@
-html,
-body {
-  padding: 0;
+:root {
+  /*Fonts*/
+  --ff-titles: 'Fjalla One', sans-serif;
+  --ff-content: 'Noto Sans', sans-serif;
+  /*Colors*/
+  /*Sizes*/
+  --h1: 3rem;
+  --p: 1.6rem;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
+html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
+
+body {
+  font-size: var(--p);
+  font-family: var(--ff-content);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+

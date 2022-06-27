@@ -1,0 +1,13 @@
+.header {
+  width: 100%;
+  height: 80px;
+  display: grid;
+  place-items: center;
+}
+
+.h1 {
+  text-transform: uppercase;
+  font-size: var(--h1);
+  font-family: var(--ff-titles);
+  text-align: center;
+}
