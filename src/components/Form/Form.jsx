@@ -1,11 +1,6 @@
-//import { useContext } from 'react';
-//import { FetchContext } from '../../contexts';
-
 import styles from './Form.module.css';
 
 const Form = () => {
-  //const { setQuery, setToken } = useContext(FetchContext);
-
   const onKeyEnter = async event => {
     if (event.key === 'Enter') {
       await handleSubmit(event);
@@ -32,9 +27,6 @@ const Form = () => {
     setToken(tokenToFetch);
 
     event.currentTarget.series.value = '';
-
-    // eslint-disable-next-line no-unused-vars
-    //const Chart = (await import('chart.js/auto')).default;
   };
 
   return (
