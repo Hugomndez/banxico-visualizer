@@ -1,0 +1,28 @@
+{
+  "name": "banxico-visualizer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "8.18.0",
+    "eslint-config-next": "12.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hugomndez/banxico-visualizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hugomndez/banxico-visualizer/issues"
+  },
+  "homepage": "https://github.com/Hugomndez/banxico-visualizer#readme"
+}
