@@ -1,0 +1,56 @@
+#apiForm {
+  min-width: 320px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 40px auto;
+}
+
+#apiForm fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+#apiForm label {
+  margin-bottom: 10px;
+}
+#apiForm input {
+  height: 35px;
+  padding: 5px;
+}
+
+#apiForm p {
+  font-size: small;
+  margin: 7px 0;
+  color: rgb(90 87 87);
+}
+
+#apiForm button {
+  height: 35px;
+  width: 80px;
+}
+
+@media screen and (min-width: 900px) {
+  #apiForm {
+    max-width: unset;
+    height: 150px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #apiForm fieldset {
+    height: 120px;
+  }
+
+  #apiForm input {
+    width: 400px;
+  }
+
+  #apiForm button {
+    margin-top: 32px;
+    margin-bottom: 30px;
+  }
+}
