@@ -1,13 +1,13 @@
-//import { useContext, useState } from 'react';
-//import { Bar, Line } from 'react-chartjs-2';
-//import { ChartsLoader } from '../../components';
-//import { FetchContext } from '../../contexts';
+import { useContext, useState } from 'react';
+import { Bar, Line } from 'react-chartjs-2';
+import { ChartsLoader } from '../../components';
+import { FetchContext } from '../../contexts';
 
 import styles from './Charts.module.css';
 
 const Charts = () => {
-  //const { status, data } = useContext(FetchContext);
-  //const [chartType, setchartType] = useState('Line');
+  const { status, data } = useContext(FetchContext);
+  const [chartType, setchartType] = useState('Line');
 
   const ChartFormat = dataset => {
     let parsed = {};
@@ -24,7 +24,7 @@ const Charts = () => {
   };
 
   const saveChart = async item => {
-    //const saveAs = (await import('file-saver')).default;
+    const saveAs = (await import('file-saver')).default;
     const itemChart = document.getElementById(item);
     itemChart.toBlob(blob => {
       saveAs(blob, `Series-${item}.jpg`);

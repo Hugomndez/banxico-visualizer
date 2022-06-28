@@ -1,9 +1,10 @@
 import Head from 'next/head';
-import { Form, Header } from '../components';
+import { Charts, Form, Header } from '../components';
+import { FetchProvider } from '../contexts';
 
 export default function Home() {
   return (
-    <>
+    <FetchProvider>
       <Head>
         <title>Banxico Visualizer</title>
         <meta
@@ -15,7 +16,8 @@ export default function Home() {
       <Header />
       <main>
         <Form />
+        <Charts />
       </main>
-    </>
+    </FetchProvider>
   );
 }
