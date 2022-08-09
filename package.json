@@ -34,7 +34,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "chart.js": "^3.8.0",
+    "chart.js": "^3.9.1",
     "critters": "^0.0.16",
     "file-saver": "^2.0.5",
     "next": "12.1.6",
