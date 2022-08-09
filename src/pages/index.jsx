@@ -1,6 +1,12 @@
+import dynamic from 'next/dynamic';
 import Head from 'next/head';
-import { Charts, Form, Header } from '../components';
+import { Suspense } from 'react';
+import { Form, Header } from '../components';
 import { FetchProvider } from '../contexts';
+
+const Charts = dynamic(() => import('../components/Charts/'), {
+  suspense: true,
+});
 
 export default function Home() {
   return (
@@ -16,7 +22,9 @@ export default function Home() {
       <Header />
       <main>
         <Form />
-        <Charts />
+        <Suspense fallback={`Loading...`}>
+          <Charts />
+        </Suspense>
       </main>
     </FetchProvider>
   );

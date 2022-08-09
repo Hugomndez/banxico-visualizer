@@ -1,7 +1,32 @@
 {
   "name": "banxico-visualizer",
-  "version": "0.1.0",
+  "description": "Prototype to consume Banxico API",
+  "author": {
+    "name": "Hugo Méndez",
+    "url": "https://hugomendez.dev"
+  },
+  "version": "0.1.1",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hugomndez/banxico-visualizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hugomndez/banxico-visualizer/issues"
+  },
+  "homepage": "https://banxico-visualizer.vercel.app",
+  "browserslist": {
+    "production": [
+      ">0.25%",
+      "not ie 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,6 +35,7 @@
   },
   "dependencies": {
     "chart.js": "^3.8.0",
+    "critters": "^0.0.16",
     "file-saver": "^2.0.5",
     "next": "12.1.6",
     "react": "18.2.0",
@@ -20,13 +46,5 @@
   "devDependencies": {
     "eslint": "8.18.0",
     "eslint-config-next": "12.1.6"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Hugomndez/banxico-visualizer.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Hugomndez/banxico-visualizer/issues"
-  },
-  "homepage": "https://banxico-visualizer.vercel.app"
+  }
 }

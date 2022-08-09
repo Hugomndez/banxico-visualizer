@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  experimental: {
+    optimizeCss: true,
+  },
   webpack: config => {
     // camel-case style names from css modules
     config.module.rules
